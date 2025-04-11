@@ -1,22 +1,23 @@
-> 📄 **New here?** 👉 [See how to use this template →](./TEMPLATE-INSTRUCTIONS.md)
+# Is Anagram – DSA Practice Challenge
 
-# [EXERCISE TITLE HERE]
-
-> Replace this section with a one-line summary of the exercise.  
-> Example: Implement a function to check if two strings are anagrams.
-
----
+This is a classic DSA interview problem: **check if two strings are anagrams** of each other.
 
 ## 📘 Description
 
-Describe the problem in detail.
+Write a function `isAnagram(str1, str2)` that returns `true` if `str1` and `str2` are anagrams of each other, and `false` otherwise.
 
-Example:
+> Two strings are anagrams if they contain the same characters in the same quantity, but possibly in a different order.
 
-Given two strings `s1` and `s2`, return `true` if `s2` is an anagram of `s1`, and `false` otherwise.  
-An anagram is a word or phrase formed by rearranging the letters of a different word.
+For example:
 
----
+```js
+isAnagram('listen', 'silent') // true
+isAnagram('hello', 'world')   // false
+isAnagram('evil', 'vile')     // true
+isAnagram('fluster', 'restful') // true
+isAnagram('aaa', 'aaaa') // false
+isAnagram('abc', 'cba') // true
+``` 
 
 ## 📥 Input
 
@@ -30,16 +31,11 @@ An anagram is a word or phrase formed by rearranging the letters of a different 
 
 - Returns `true` or `false`
 
----
-
 ## 💡 Tips
 
-- Use `.toLowerCase()` if needed
-- Use objects, arrays or `Map` to count character frequencies
-- Aim for O(n) time complexity if possible
-- Compare frequency maps or use one-pass counter
-
----
+- Think about how to compare the character frequency of both strings efficiently.
+- Use a frequency counter to track character counts.
+- Avoid sorting to achieve O(n) time complexity.
 
 ## 🧪 Run Tests
 
@@ -51,12 +47,3 @@ npm run test
 ```
 
 Make sure your implementation is in `src/main.js` and your tests in `test/main.test.js`.
-
----
-
-## ✍️ Your Task
-
-1. Read the problem and requirements
-2. Write your implementation in `src/main.js`
-3. Test your solution with `npm run test`
-4. Document anything relevant in this README if needed
