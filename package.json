@@ -1,11 +1,12 @@
 {
   "name": "dsa",
   "version": "1.0.0",
-  "main": "index.html",
   "scripts": {
     "test": "vitest",
     "lint": "eslint .",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "start": "parcel ./src/index.html",
+    "build": "parcel build ./src/index.html"
   },
   "keywords": [],
   "author": "Juan Correa",
@@ -19,6 +20,7 @@
     "globals": "^16.0.0",
     "husky": "^9.1.7",
     "lint-staged": "^15.5.0",
+    "parcel": "^2.14.4",
     "prettier": "^3.5.3",
     "vitest": "^3.1.1"
   },

@@ -4,6 +4,6 @@
  * @param {string} str2
  * @returns {boolean}
  */
-export function isAnagram(str1, str2) {
+function isAnagram(str1, str2) {
   // Your solution here
 }
