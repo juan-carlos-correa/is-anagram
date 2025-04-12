@@ -1,6 +1,6 @@
 import { it, expect } from 'vitest';
 
-import { isAnagram } from './main.js';
+import { isAnagram } from './main.mjs';
 
 it('returns true for basic anagrams', () => {
   expect(isAnagram('listen', 'silent')).toBe(true);
