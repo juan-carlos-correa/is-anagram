@@ -1,0 +1,12 @@
+{
+  "setupTasks": [{ "name": "Install Dependencies", "command": "npm install" }],
+  "tasks": {
+    "start": {
+      "name": "start",
+      "command": "npm start",
+      "runAtStart": true,
+      "preview": { "port": 1234 }
+    },
+    "build": { "name": "build", "command": "npm build", "runAtStart": false }
+  }
+}
